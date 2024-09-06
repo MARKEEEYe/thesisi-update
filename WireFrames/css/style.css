@@ -1,0 +1,100 @@
+/* Coded with love by Mutiullah Samim */
+
+/* Reset body and html margins, padding, and height */
+body, html {
+    background-image: url("Images/motherboardBG.jpg");
+     /* Adjust path according to your directory structure */
+    background-size: cover; /* Ensure the image covers the whole background */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    margin: 0; /* Remove default margin */
+    padding: 0;
+   
+}
+
+/* Card container for user content */
+.user_card {
+    height: 400px;
+    width: 350px;
+    margin: auto; /* Center the card vertically and horizontally */
+    background: rgba(255, 255, 255, 0.5); /* Semi-transparent background */
+    backdrop-filter: blur(10px); /* Apply blur effect */
+    -webkit-backdrop-filter: blur(10px);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+}
+
+
+/* Brand logo container with circular background */
+.brand_logo_container {
+    position: absolute;
+    height: 170px;
+    width: 170px;
+    top: -75px;
+    border-radius: 50%;
+    background: #60a3bc;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Brand logo with circular border */
+.brand_logo {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+/* Form container with top margin */
+.form_container {
+    margin-top: 100px;
+}
+
+/* Button styling for the login button */
+.login_btn {
+    width: 100%;
+    background: #2769b4 !important;
+    color: white !important;
+}
+
+/* Remove focus outline and shadow from login button */
+.login_btn:focus {
+    box-shadow: none !important;
+    outline: 0 !important;
+}
+
+/* Padding for the login container */
+.login_container {
+    padding: 0 2rem;
+}
+
+/* Input group text styling */
+.input-group-text {
+    background: #8ec3ff !important;
+    color: white !important;
+    border: 0 !important;
+    border-radius: 0.25rem 0 0 0.25rem !important;
+}
+
+/* Remove focus shadow and outline from user and password input */
+.input_user, .input_pass:focus {
+    box-shadow: none !important;
+    outline: 0 !important;
+}
+
+/* Custom checkbox styling */
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+    background-color: #8ec3ff !important;
+}
+
+.custom-alert {
+    padding: 2px 8px; 
+    line-height: 1.0; 
+    font-size: 12px; 
+    height: auto; 
+}
